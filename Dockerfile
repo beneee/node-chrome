@@ -1,5 +1,5 @@
 # use 'node' as base image
-FROM node:9.11.1
+FROM node:9.11.2
 
 # Install apt-transport-https
 RUN apt-get update \
@@ -11,4 +11,4 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
 
 # Install Chrome
 RUN apt-get update \
-    && apt-get install -y google-chrome-stable=67.0.3396.62-1
+    && apt-get install -y google-chrome-stable=67.0.3396.87-1
